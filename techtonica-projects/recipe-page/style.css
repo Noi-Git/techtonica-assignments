@@ -1,9 +1,8 @@
-.container {
-    width: 70%;
-    margin: 0 auto;
+.title {
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid #E3D721;
 }
 
-.left {
-    width: 60%;
-    margin: 0 auto;
+.dishes {
+    padding-top: 30px;
 }
