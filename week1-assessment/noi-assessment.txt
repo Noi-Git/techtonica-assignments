@@ -1,0 +1,60 @@
+How do you plan on exhibiting professionalism at Techtonica? What would be different in a full-time engineering job setting?      
+     I planned to show professionalism by promoting open and honest communication, aware of mistakes and addressing mistakes as soon as possible as well as seek a solution. Perform tasks at a high level of skill, inspires confidence in others, dress according to the company dress code of general clothing guidelines, and show up for work on time every day. 
+
+What would you do if you just found out you are going to be an hour late tomorrow morning?     
+     I will inform my boss and teammates know as soon as possible. I will also prepare materials the team may need to carry on the task while I am absent. 
+
+What would you do if you realized that you only had time to finish most of your work by the due date of a group project?      
+     I will do what I can and explain to my boss and teammates where I am in the project or what I am stuck on, and ask for help. I will also let them know that I will plan better next time. 
+
+Knowing yourself, what are the most effective ways for you to learn and retain new information?      
+     I am a visual learner and learn well by doing. Understand the picture of the outcome also help me plan the task better. 
+
+What is growth mindset? 	
+     Growth mindset is believing that everything can be improved through practice. see failure is a chance to learn and pivot, see critical feedback as the chance to enhance, embrace challenging task and work hard to improve it, view obstacles as a chance to experiment and solve problems, focus on a journey of continual, improvement, creative and innovate. 
+
+Which operating system are you using right now? Name two other popular operating systems.      
+     I am using a Macintosh Operating system (macOS). Microsoft Operating system and Linux Operating system are the other two of common operating system. 
+
+Why do computers need operating systems?      
+     We need operating systems to help manage computer resources such as central processing unit which control memory, disk drives, and peripherals. Computer operating system also helps establish a user interface and execute and provide services for applications software. 
+
+Explain what you would do if you felt stuck on a coding problem.      
+     First, I will try to recognize that I am stuck. Then read the problem several times until I can explain it to someone else, write it out in pseudocode, and do research. If I am still unable to solve the problem, I will ask for help. 
+
+Describe the ways you plan on meeting and staying connected with new people in tech this month.      
+     - pay attention and focus when someone is talking      
+     - make a good first impression by holding yourself and be aware of your expressions, tone of voice, gestures, and make eye contact      
+     - try to remember the name      
+     - make myself memorable by having a story about myself and be willing to share thoughts, ideas, beliefs, and goals      
+     - research about the person or the company and be open to learning      
+     - show them I care by showing empathy and kindness 
+
+Describe some examples of effective body language and what is communicated when they are used well.      
+     - have an open and positive posture and use open hand gestures when speaking to people      
+     - use a firm handshake      
+     - maintain good eye contact to show that you are sincere and engaged, but don’t turn it into staring match       - avoid touching your face because it shows dishonest 
+
+Describe some examples of effective word choice and what is communicated when they are used well.      
+     Instead of saying “Sorry for being late. I missed the first train and the second one was a delay.” It is better to say “Sorry for being late. I will plan to leave home early next time.” 
+
+How can you build trust in a team?      
+     - be honest and explain your attention      
+     - make your action match your words      
+     - be open to feedback      
+     - think before acting 
+
+How are the devices on the internet physically connected to each other? 
+     Computers connect and communicate with each other using TCP/IP 
+
+How is information physically transmitted from device to device?      
+     The information transmitted from device to device in either analog format or the digital format 
+
+How does one device find another it’s trying to communicate with?      
+     Devices find each other by a unique IP address 
+
+What methods do devices on the internet use to communicate?      
+     The devices on the internet use TCP/IP to communicate with each other using get and post request  
+
+How can we send data reliably even if the network is unreliable?      
+     We need to divide data into small chunks or packet and keep track of which packets have been received successfully. Then resend any that have been lost
