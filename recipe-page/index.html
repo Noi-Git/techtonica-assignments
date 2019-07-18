@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="style.css">
     <title>Classic Thai Food Recipes</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #E68D17;">
-    <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #E68D17;">
+    
+        <div class="container">
         <a class="navbar-brand" href="#">Classic Thai Foods -></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -44,15 +45,16 @@
         <p class = "title--subtitle">Thai cuisine is the national cuisine of Thailand. Thai cooking places emphasis on lightly prepared dishes with strong aromatic components and a spicy edge.</p>
     </div>
     <div class="border-line"></div>
+
     <div class="dishes">
         <h2>Dry Noodles</h2>
-        <p>The super-tasty noodles dish that is quick and easy to make.</p>
+        <p>Noodles dish is quick and easy to make. The super-tasty, deliciously, spicy with hints of sweetness. </p>
     </div>
 
     <div class="row">
         <div class="col-sm">
             <div class="left">
-                <img src="https://i.ytimg.com/vi/tatDqVbz3ho/maxresdefault.jpg" alt="dry noodles with bbq pork and vegetable" style = "width: 600px;">
+                <img src="https://i.ytimg.com/vi/tatDqVbz3ho/maxresdefault.jpg" alt="dry noodles with bbq pork and vegetable" style = "width: 100%;">
             </div> <!-- class = "left" -->
         </div> <!-- col-sm -->
         <div class="col-sm">
@@ -113,19 +115,32 @@
             </div>    
         </div>
     </div>
+<div class="colorChangeButton">
+    <button type="button" class="btn btn-info" id="clickMe">Change my color</button>
+</div>
+</div> <!-- container -->
     <div class="related-links">
-        <h3>Other recipies to try:</h3>
-        <p><a href="https://operationgoodfood.wordpress.com/2015/03/15/thai-tom-yum-noodles-dry/">Thai Tom Yum Noodles (Dry)</a></p>
-        <p><a href="https://lusciousthaifood.com/product/chicken-tom-yum-noodle-soup/">Luscious Thai</a></p>
-        <h3>YouTube How to:</h3>
-        <p><a href="https://www.youtube.com/watch?v=VxXgrFYSVkM">Pailin's Kitchen</a></p>
-
-        <button type="button" class="btn btn-info">Info</button>
+        <div class="row">
+            <div class="col-sm text-center">
+                <h3 class = "related--title">Other recipies to try:</h3>
+                <p><a href="https://operationgoodfood.wordpress.com/2015/03/15/thai-tom-yum-noodles-dry/">Thai Tom Yum Noodles (Dry)</a></p>
+                <p><a href="https://lusciousthaifood.com/product/chicken-tom-yum-noodle-soup/">Luscious Thai</a></p>
+            </div>
+            <div class="col-sm text-center">
+                <h3 class = "related--title">YouTube How to:</h3>
+                <p><a href="https://www.youtube.com/watch?v=VxXgrFYSVkM">Pailin's Kitchen</a></p>
+            </div>
+        </div>
     </div>
-    </div> <!-- container -->
+    <div class="footer">
+        <!-- <button type="button" class="btn btn-info" id="clickMe">Info</button> -->
+        <p class="footer--text">&copy; Noi Sinnang</p>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     
 </body>
 </html>
