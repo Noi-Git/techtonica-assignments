@@ -18,7 +18,21 @@ $(document).ready(function() {
             $(".instructions").css("background-color","#ffb6b9"); 
         }
     });
+
+      $('#myCarousel').on('slide.bs.carousel', function () {
+    $('.carousel').carousel({
+        interval: 300
+      })  })
 });
+
+// $('.carousel').carousel({
+//     interval: 300
+//   })
+
+//   $('#myCarousel').on('slide.bs.carousel', function () {
+//     $('.carousel').carousel({
+//         interval: 300
+//       })  })
 
 
 
