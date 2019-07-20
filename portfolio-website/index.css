@@ -1,0 +1,58 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 80vh;
+    padding: 10% 0;
+    background-image: linear-gradient(#cf455c, #ffdd67, #007065);
+    color: #f9f6f2;
+    text-shadow: 2px 2px 4px #204969;
+}
+
+.main--title {
+    font-family: 'Parisienne', cursive;
+    padding-bottom: 30px;
+
+}
+
+.main--subtitle {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.main--description {
+    font-size: 1.5rem;
+}
+
+.about {
+    margin: 50px 0;
+}
+
+.about--picture {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    /* transform: scale(1.5); */
+}
+
+.about--title {
+    font-family: 'Parisienne', cursive;
+    font-size: 2.3rem;
+    margin-top: 20px;
+}
+
+.skills {
+
+}
+
+.footer {
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #414141;
+    color: #f9f6f2;
+}
