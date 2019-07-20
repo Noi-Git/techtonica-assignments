@@ -50,6 +50,15 @@ body {
 
 }
 
+.skills--title {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.line-height {
+    line-height: 2.5;
+}
+
 .footer {
     padding: 20px 0;
     margin-top: 20px;
