@@ -7,30 +7,83 @@ body {
 
 .main {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     padding: 10% 0;
     background-image: linear-gradient(#cf455c, #ffdd67, #007065);
     color: #f9f6f2;
     text-shadow: 2px 2px 4px #204969;
 }
 
+@media (min-width: 576px) {
+    .main {
+        height: 80vh;
+    }
+}
+
 .main--title {
     font-family: 'Parisienne', cursive;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
 
+@media (min-width: 576px) {
+    .main--title {
+        padding-bottom: 30px;
+    }
 }
 
 .main--subtitle {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    .main--subtitle {
+        font-size: 2.5rem;
+    }
 }
 
 .main--description {
     font-size: 1.5rem;
 }
 
-.about {
+.skills {
     margin: 50px 0;
+}
+
+.skills--title {
+    font-family: 'Parisienne', cursive;
+    font-size: 2.3rem;
+    margin-top: 20px;
+}
+
+.skills--subtitle {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.line-height {
+    line-height: 2.2;
+}
+
+.project--img {
+    width: 100%;
+    padding: 10px 0;
+    outline: 1px solid green;
+    box-shadow: 3px 2px 2px 2px #fff;
+}
+
+@media (min-width: 576px) {
+    .project--img {
+        padding: 0 0;
+        box-shadow: 3px 2px 2px 2px #999;
+    }
+}
+
+.about {
+    margin: 70px 0 0 0;
+    padding: 50px 0;
+    background-image: linear-gradient(#1aa687, #d9ecf2);
 }
 
 .about--picture {
@@ -46,22 +99,20 @@ body {
     margin-top: 20px;
 }
 
-.skills {
-
-}
-
-.skills--title {
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.line-height {
-    line-height: 2.5;
-}
-
 .footer {
-    padding: 20px 0;
-    margin-top: 20px;
+    padding: 5px 0;
     background-color: #414141;
     color: #f9f6f2;
+}
+
+.copyrights {
+    font-size: .7rem;
+}
+
+.social-media i{
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    color: white;
 }

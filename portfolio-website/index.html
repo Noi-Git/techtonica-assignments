@@ -6,62 +6,128 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Parisienne&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/221926b180.js"></script>
+
     
     <link rel="stylesheet" href="index.css">
     <title>Noi Sinnang</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="#">Portfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+    <!-- <a class="navbar-brand" href="#">Portfolio</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/Noi-Git" target="_blank">GitHub</a>
-      </li>
-      <li class="nav-item">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Noi-Git" target="_blank">GitHub</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/noi-sinnang/" target="_blank">LinkedIn</a>
-      </li>
-      
-    </ul>
-  </div>
-</nav>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/noi_patsin" target="_blank">twitter</a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+    </nav>
     <section class="main text-center">
             <h1 class="display-1 main--title">Noi Sinnang</h1>
-            <div class="main--subtitle">Software Engineer</div>
+            <h2 class="main--subtitle">Software Engineer</h2>
             <div class="main--description">A little things I want to tell people about &quot;short description&quot;.</div>
     </section>
+
     <div class="container">
-
-
-    <section class="col-8 mx-auto about text-center">
-        <h2 class="about--title">About Me</h2>
-        <img class="about--picture rounded-circle" src="img/noi-sinnang.jpg" alt="picture of Noi">
-        <p class="about--description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nemo earum quidem culpa, vel quis. dolor, sit amet consectetur adipisicing elit.</p>
-    </section>
-
-    <section class="skills">
+    <section class="col-sm-12mx-auto skills text-center">
+            <h2 class="skills--title">Skills</h2>
         <div class="row">
-            <div class="col-4 line-height text-right">
-                <div class="skills--title">FrontEnd</div>
-                <div class="skills--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur  reiciendis corporis magni.</div>
+            <div class="col-sm-12 col-md-4">
+                <div class="skills text-center">
+                    <div class="skills--subtitle">FrontEnd</div>
+                    <p class="skills--descriptions">Javascript ES6, Webpack, React.js, Gulp.js, Bootstrap 4, CSS-Grid, Flexbox</p>
+                </div> 
             </div>
-            <div class="col"></div>
-            <div class="col-4 line-height">
-                    <div class="skills--title">BackEnd</div>
-                    <div class="skills--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur  reiciendis corporis magni.</div>
+            <div class="col-sm-12 col-md-4">
+                <div class="skills text-center">
+                    <div class="skills--subtitle">BackEnd</div>
+                    <p class="skills--descriptions">Node.js, Express.js, NPM, REST APIs, MongoDB, SQL, WordPress</p>
+                </div> 
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="skills text-center">
+                    <div class="skills--subtitle">Others</div>
+                    <p class="skills--descriptions">Adobe Illustrator, Adobe Photoshop, Sketch, Bash</p>
+                </div> 
             </div>
         </div>
     </section>
+
+    <section class="projects">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="https://noi-git.github.io/travel/">
+                <img class="project--img" src="img/custom-grid-hi-dpi.png" alt="built with gulp.js"></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://noidesign.space/advance-css/">
+                <img class="project--img" src="img/adv-css-hi-dpi.png" alt="project built using css3 advance features"></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://noidesign.space/css-grid/">
+                <img class="project--img" src="img/css-grid-hi-dpi.png" alt="project built with css-grid"></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                <img class="project--img" src="img/cooking.png" alt="project built with Bootstrop 4"></a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-3">
+                <a href="http://noisinnang.space/tranquil_relaxation/">
+                <img class="project--img" src="img/tranquil-large-hi-dpi.png" alt="project built with Bootstrap 3"></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://noi-git.github.io/react-unsplash-images/">
+                <img class="project--img" src="img/unsplash-hi-dpi.png" alt="project built with React.js"></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://noisinnang.space/trees.html">
+                <img class="project--img" src="img/trees-large-hi-dpi.png" alt="project svg animation"></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://noidesign.space/flexbox/">
+                <img class="project--img" src="img/flexbox.png" alt="project built with blexbox"></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <section class="col-sm-12 about text-center">
+        <div class="about--container col-sm-7 mx-auto">
+        <h2 class="about--title">About Me</h2>
+        <img class="about--picture rounded-circle" src="img/noi-sinnang.jpg" alt="picture of Noi">
+        <p class="about--description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nemo earum quidem culpa, vel quis. dolor, sit amet consectetur adipisicing elit.</p>
     </div>
+    </section>
+    
     <footer class="footer text-center">
-            &copy; 2019 Noi Sinnang
+        <div class="social-media">
+            <a href="https://twitter.com/noi_patsin" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/noi-sinnang/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/Noi-Git/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+        <p class="copyrights">
+                &copy; 2019 Noi Sinnang
+        </p>
+            
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
