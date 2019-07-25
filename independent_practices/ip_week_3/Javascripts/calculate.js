@@ -4,4 +4,5 @@ function calculate(myArray) {
   
   }
   calculate([8, '+', 2])
+  console.log("**** This is result from calculate exercise ****")
   console.log(num);
