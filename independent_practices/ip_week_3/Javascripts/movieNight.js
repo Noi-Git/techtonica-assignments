@@ -29,8 +29,9 @@ for (let i = 0; i < people.length; i++) {
     if (david === true) console.log("Alex is going. Ming is not going")
     if (priya === true) console.log("Ming is going")
     console.log(`***** end ***`)
+    console.log(people)
     }
     return people;   
 }
-movieNight(people)
+movieNight(ming)
 console.log(people)
