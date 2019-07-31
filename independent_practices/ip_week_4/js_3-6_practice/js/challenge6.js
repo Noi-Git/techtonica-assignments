@@ -16,38 +16,47 @@
 // console.log(sleep_in(false, true));
 
 
+// function sleep_in(weekday, vacation) {
+//     switch(weekday) {
+//         case (true):
+//             console.log("Today is a work day");
+//             return("Today is a work day");
+//     }
+
+//     switch (vacation) {
+//         case (true):
+//             console.log("We sleep in")
+//             break;
+//         case (false):
+//             console.log("You are not on vacation");
+//             return("Hoorayyy! you are on vacation");
+//     }
+// }
+// sleep_in(false, false)
+
+// switch(weekday, vacation) {
+//     case (true, true):
+//         console.log("Today is a work day"); // false,true
+//         return("Today is a work day");
+//         break;
+
+//     case (false, false):
+//         console.log("You are not on vacation"); // true,false
+//         return("You are not on vacation");
+//         break;
+//     default:
+//         console.log("We sleep in") //false,false
+
+// }
+
 function sleep_in(weekday, vacation) {
-    // switch(weekday) {
-    //     case (false):
-    //         console.log("Today is a work day");
-    //         return("Today is a work day");
-    // }
-
-    // switch (vacation) {
-    //     case true:
-    //         console.log("We sleep in")
-    //         break;
-    //     case false:
-    //         console.log("You are not on vacation");
-    //         return("Hoorayyy! you are on vacation");
-    // }
-
-    switch(weekday, vacation) {
-        case (true, true):
-            console.log("Today is a work day"); // false,true
-            return("Today is a work day");
-            break;
-
-        case (false, false):
-            console.log("You are not on vacation"); // true,false
-            return("You are not on vacation");
-            break;
-        default:
-            console.log("We sleep in") //false,false
-
+    switch (vacation || !weekday) {
+        case (true):
+            console.log("sleep in")
+            return true;        
     }
+            console.log("not sleep in");
+            return false;
+    
 }
-sleep_in(true, false)
-//"We sleep in"
-//"Today is a work day"
-//"You are not on vacation"
+sleep_in(false, true)
