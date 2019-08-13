@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #4A4A4A;
+  }
+
+.header--title {
+    text-align: center;
+}
+/* .card-img-height {
+    height: 40%;
+} */
+
+/* .card {
+    height: 500px;
+} */
+.card-body {
+    height: 60%;
+}

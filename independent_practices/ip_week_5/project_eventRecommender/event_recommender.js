@@ -54,10 +54,10 @@ class EventRecommender {
         this.users.push(addUser);
     }
 
-    saveUserEvent(user, events){
-    //Allow users to save events to a personal Events array.
-        this.users.saveUserEvent(events)
-    }
+    // saveUserEvent(user, events){
+    // //Allow users to save events to a personal Events array.
+    //     this.users.saveUserEvent(events)
+    // }
 
     deleteUser(userToDelete) {
     // Deletes a User from the system
