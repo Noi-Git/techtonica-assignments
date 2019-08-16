@@ -18,16 +18,55 @@ body {
     color: #4A4A4A;
   }
 
-.header--title {
-    text-align: center;
+.navigation {
+  background-color: #4A4A4A;
+  padding: 10px 0;
 }
-/* .card-img-height {
-    height: 40%;
-} */
 
-/* .card {
-    height: 500px;
-} */
-.card-body {
-    height: 60%;
+.navigation-company-name {
+  color: white;
+  padding-left: 30px;
 }
+
+.nav-content {
+  color: white;
+  padding-right: 20px;
+}
+
+.title {
+  font-weight: 700;
+  text-align: center;
+  padding: 60px 0 30px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-field {
+  padding-top: 15px;
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+  background-color: #226b80;
+  border-color: #226b80;
+  color: #FFF;
+  font-size: 1.4rem;
+}
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]:hover {
+  background-color: #00818a;
+  border-color: #00818a;
+  color: #fff;
+}
+
+/* .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #35b0ab;
+  border-color: #35b0ab;
+  font-size: 1.5rem;
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary:hover {
+  background-color: #226b80;
+  border-color: #226b80;
+} */

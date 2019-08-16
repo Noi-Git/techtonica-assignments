@@ -13,13 +13,6 @@ class User {
     }
 }
 
-// console.log('addUserEvent - ', this._userEvent)
-// const user_noi = new User("Noi", "noi.patsin@gmail.com");
-// const user_someone = new User("Someone", "someone@gmail.com");
-
-// user_noi.addUserEvent("2th Street Block Party", "We're spicing up your summer the only way we know how, block party style!. This event is FREE to attend!", "Mission District, San Francisco, CA", "Sat, Aug 17, 12 PM");
-// user_someone.addUserEvent("Rock Paper Scissors Tournament & Pub Crawl", "Look for the pink Pub Crawl Meeting Point", "498 Broadway, San Francisco, CA", "Wed, Aug 14, 8:30 PM");
-
 /* ===== Event ==== */
 class Event {
     constructor(eventName, eventDescription, eventAddress, eventDate) {
@@ -31,16 +24,12 @@ class Event {
     }
 }
 
-// const event_1 = new Event("2th Street Block Party", "We're spicing up your summer the only way we know how, block party style!. This event is FREE to attend!", "Mission District, San Francisco, CA", "Sat, Aug 17, 12 PM");
-// const event_2 = new Event("Rock Paper Scissors Tournament & Pub Crawl", "Look for the pink Pub Crawl Meeting Point", "498 Broadway, San Francisco, CA", "Wed, Aug 14, 8:30 PM ");
-
-
 class EventRecommender {
-    constructor(events, users) {
+    // constructor(events, users) {
     // All main properties should go here.
-    this.events = [];
-    this.users = [];
-    }
+    // this.events = [];
+    // this.users = [];
+    // }
 
     addEvent(eventName, eventDescription, eventAddress, eventDate) {
     // Adds a new Event to the System
@@ -48,27 +37,36 @@ class EventRecommender {
         this.events.push(addEvent);
     }
 
-    addUser(userName, userEmailAddress) {
+    addUser(user) {
     // Adds a new User to the System
-        let addUser = new User(userName, userEmailAddress);
-        this.users.push(addUser);
+        // let addUser = new User(userName, userEmailAddress);
+        // this.users.push(addUser);
+        const userList = document.getElementById('user-list');
+        const row = document.createElement('tr');
+        row.innerHTML = `
+        <td>${user.userName}</td>
+        <td>${user.userEmailAddress}</td>
+        <td><a href="#" class"delete">Delete</a></td>
+        `;
+        userList.appendChild(row);
     }
 
-    // saveUserEvent(user, events){
-    // //Allow users to save events to a personal Events array.
-    //     this.users.saveUserEvent(events)
-    // }
-
+/*
+    saveUserEvent(user, events){
+    //Allow users to save events to a personal Events array.
+        this.users.saveUserEvent(events)
+    }
+    
     deleteUser(userToDelete) {
-    // Deletes a User from the system
-    this.users = this.users.filter(user => user.userName != userToDelete);
+        // Deletes a User from the system
+        this.users = this.users.filter(user => user.userName != userToDelete);
     }
-   
+    
     deleteEvent(eventToDelete) {
-    // Deletes the Event from the system
-    this.events = this.events.filter(event => event.deleteEvent != eventToDelete);
+        // Deletes the Event from the system
+        this.events = this.events.filter(event => event.deleteEvent != eventToDelete);
     }
-
+    
     filter(eventName){
         for(let i = 0; i < this.events.length; i++) {
             if(this.events[i].eventName === eventName) {
@@ -76,8 +74,10 @@ class EventRecommender {
             }
         }
     }
+          */
 }
 
+/*
 // instantiate eventRecommender from Class EventRecommender
 const eventRecommender = new EventRecommender();
 
@@ -85,8 +85,30 @@ const eventRecommender = new EventRecommender();
 eventRecommender.addUser("Noi", "noi.patsin@gmail.com");
 eventRecommender.addUser("Someone", "someone@gmail.com");
 console.log('eventRecommender after addUser - ', eventRecommender.users);
-
 // add events to object eventRecommender
 eventRecommender.addEvent("2th Street Block Party", "We're spicing up your summer the only way we know how, block party style!. This event is FREE to attend!", "Mission District, San Francisco, CA", "Sat, Aug 17, 12 PM");
 eventRecommender.addEvent("Rock Paper Scissors Tournament & Pub Crawl", "Look for the pink Pub Crawl Meeting Point", "498 Broadway, San Francisco, CA", "Wed, Aug 14, 8:30 PM");
 console.log('eventRecommender after addEvent - ', eventRecommender.events);
+*/
+
+document.getElementById('user-form').addEventListener('submit', function(e) {
+    const username = document.getElementById('username').value
+    const useremail = document.getElementById('useremail').value
+    // const userevent = document.getElementById('userevent').value
+
+    const userList = new User(userName, userEmailAddress);
+
+    // instantiate EventRecommender
+    const eventRecommender = new EventRecommender();
+
+    //validate
+    if(title === '' || title === '') {
+        eventRecommender.showAlert('Please fill in all fields', 'error')
+    } else {
+        eventRecommender.addUser(userName, userEmailAddress);
+
+        eventRecommender.showAlert('User Added', 'success');
+        eventRecommender.clearFields();
+    }
+    e.preventDefault();
+})
