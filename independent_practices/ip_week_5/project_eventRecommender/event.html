@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Event Recommender Project</title>
+</head>
+
+<body class="body">
+  <div class="row navigation">
+    <div class="one columns"></div>
+    <div class="three columns navigation-company-name">
+      <a href="index.html">Event Recommender</a>
+    </div>
+    <div class="four columns">..</div>
+    <div class="one columns nav-content">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="one columns nav-content">
+      <a href="user.html">User</div>
+    <div class="one columns nav-content">
+      <a href="event.html">Event</a>
+    </div>
+    <div class="one columns"></div>
+  </div>
+
+  <div class="container">
+    <h2 class="title">Event Page</h2>
+    <form action="" id="event-form">
+      
+      <!-- <div class="form-field"> -->
+
+        <div class="row">
+          <div class="six columns">
+            <div class="form-field">
+              <label for="eventName">Event Name</label>
+              <input type="text" id="eventName" class="u-full-width">
+            </div>
+          </div>
+          <div class="four columns">
+            <div class="form-field">
+              <label for="eventDate">Date</label>
+              <input type="text" id="eventDate" class="u-full-width">
+            </div>
+          </div>
+          <div class="two columns">
+            <div class="form-field">
+              <label for="eventPrice">price</label>
+              <input type="text" id="eventPrice" class="u-full-width">
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-field">
+          <label for="eventDescription">Event Description</label>
+          <input type="text" id="eventDescription" class="u-full-width">
+        </div>
+        
+        <!-- </div> -->
+
+        
+      <!-- </div> -->
+      <div class="form-field">
+        <input type="submit" value="submit" class="u-full-width submit-bg">
+      </div>
+    </form>
+
+    <!-- Table -->
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Event name</th>
+          <th>Date</th>
+          <th>Price</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody id="event-list"></tbody>
+    </table>
+  </div>
+  <!-- class="container" -->
+
+  <script src="event.js"></script>
+</body>
+
+</html>

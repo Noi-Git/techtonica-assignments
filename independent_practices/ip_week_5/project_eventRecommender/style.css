@@ -11,11 +11,16 @@ html {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.7;
     color: #4A4A4A;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 
 .navigation {
@@ -33,6 +38,20 @@ body {
   padding-right: 20px;
 }
 
+.active {
+  font-weight: 700;
+}
+
+.delete {
+  background-color: #eb7070;
+  padding: 5px 15px;
+}
+.delete:hover {
+  background-color: #da4302;
+  color: white;
+  padding: 5px 15px;
+}
+
 .title {
   font-weight: 700;
   text-align: center;
@@ -43,30 +62,33 @@ body {
   text-align: center;
 }
 
+#user-form {
+  width: 70%;
+  margin: 0 auto 20px auto;
+}
 .form-field {
   padding-top: 15px;
 }
 
 .button, button, input[type="submit"], input[type="reset"], input[type="button"]{
-  background-color: #226b80;
-  border-color: #226b80;
+  background-color: #4f81c7;
+  border-color: #4f81c7;
   color: #FFF;
   font-size: 1.4rem;
 }
-.button, button, input[type="submit"], input[type="reset"], input[type="button"]:hover {
-  background-color: #00818a;
-  border-color: #00818a;
-  color: #fff;
+
+
+/* ===== alert ====*/
+.success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
 }
 
-/* .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #35b0ab;
-  border-color: #35b0ab;
-  font-size: 1.5rem;
+.success {
+    background: #83b582;
 }
 
-.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary:hover {
-  background-color: #226b80;
-  border-color: #226b80;
-} */
+.error {
+    background: #eb7070;
+}

@@ -45,3 +45,5 @@ let nameArray = name.match(/.\w+./g)
 return nameArray;
 }
 console.log(newName("Leah, Russell, Michelle"))
+
+
