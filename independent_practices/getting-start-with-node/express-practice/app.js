@@ -1,6 +1,9 @@
 const express   = require('express');
+const I_LOVE = require('./config');
 const path      = require('path');
 const logger    = require('./middleware/logger');
+
+console.log("I love ", I_LOVE);
 
 const app = express();
 
