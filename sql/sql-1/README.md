@@ -27,3 +27,7 @@ cucumber salad|100|dinner
 green curry|800|dinner
 rice|200|dinner
 burito|500|breakfast
+
+ **Work through the Codecademy SQL Tutorials**
+
+https://github.com/Noi-Git/techtonica-assignments/blob/master/images/codecademy_part_1-3.png
