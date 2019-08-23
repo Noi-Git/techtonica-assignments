@@ -30,9 +30,9 @@ burito|500|breakfast
 
 **SQLite Database for Browser**
 
-![data modeling diagram part 2](https://github.com/Noi-Git/techtonica-assignments/blob/master/images/sqlite-de-browser.png)
+![SQLite Database for Browser](https://github.com/Noi-Git/techtonica-assignments/blob/master/images/sqlite-de-browser.png)
 
 
  **Work through the Codecademy SQL Tutorials**
-![data modeling diagram part 2](https://github.com/Noi-Git/techtonica-assignments/blob/master/images/codecademy_part_1-3.png)
+![Work through the Codecademy SQL Tutorials](https://github.com/Noi-Git/techtonica-assignments/blob/master/images/codecademy_part_1-3.png)
 
