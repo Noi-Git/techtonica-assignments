@@ -45,7 +45,7 @@ const client = new eventful.Client(eventfulKey);
   console.log('Please write code for this function');
   const questions = [
     {
-        message: "How do you feel?",
+        message: "What is you favorite food?",
         type: "input",
         name: "favorite"
     }];
@@ -59,7 +59,8 @@ const client = new eventful.Client(eventfulKey);
   continueCallback();
 }
 
- app.createNewUser = (continueCallback) => {
+
+app.createNewUser = (continueCallback) => {
   //YOUR WORK HERE
   console.log('Please write code for this function');
   
@@ -70,65 +71,49 @@ const client = new eventful.Client(eventfulKey);
         name: "firstName"
     }];
 
-    inquirer.prompt(questions).then (answer => {
-      console.log(`hi ${answer}`);
-      // console.log(answer['firstName']);
-      let nameNew = answer['firstName'];
-      console.log(nameNew);
+  inquirer.prompt(questions).then (answer => {
+    console.log(`hi ${answer}`);
+    // console.log(answer['firstName']);
+    let nameNew = answer['firstName'];
+    console.log(nameNew);
 
-      connection.query('INSERT INTO users (name) VALUES ($1)', [nameNew], (error, results) => {
-        if (error) {
-          throw error;
-        }
-     console.log(error, results);
-    })
-    connection.end();
-    continueCallback();
-    });
-    
+  connection.query('INSERT INTO users (name) VALUES ($1)', [nameNew], (error, results) => {
+      if (error) {
+        throw error;
+      }
+    console.log(error, results);
+  })
+  connection.end();
+});
+  continueCallback();
  };
 
 
-
-
-
- app.searchEventful = (continueCallback) => {
+app.searchEventful = (continueCallback) => {
   //YOUR WORK HERE
 const questions = [
-    {
-        message: "What are you looking for?",
-        type: "input",
-        name: "keyword"
-    }];
-   console.log('Please write code for this function');
+  {
+    message: "What event are you looking for?",
+    type: "input",
+    name: "keyword"
+  }];
 
-  //End of your work
   inquirer
     .prompt(questions)
     .then (answer => {
 
-      client.searchEvents({
-        keywords: answer.keyword,
-        location: 'San Francisco',
-        date: "Next Week"
-      }, function(err, data){
-        // console.log(data)
-         if(err){
-           return console.error(err);
-         }
-         let resultEvent = data.search.events.event[0];
-         //console.log('Received ' + resultEvent.title + ' events');
-         console.log('Event: listings:' + resultEvent.title);
-        //  for ( let i =0 ; i < resultEvents.length; i++){
-          //  console.log(resultEvents[0])
-    //       console.log("===========================================================")
-    //  console.log('title: ',resultEvent[0].title);
-    //  console.log('start_time: ',resultEvent[0].start_time);
-    //  console.log('venue_name: ',resultEvent[0].venue_name);
-    //  console.log('venue_address: ',resultEvent[0].venue_address);
-
-         
-        //  continueCallback();
+  client.searchEvents({
+    keywords: answer.keyword,
+    location: 'San Francisco',
+    date: "Next Week"
+  }, function(err, data){
+    // console.log(data)
+      if(err){
+        return console.error(err);
+      }
+    let resultEvent = data.search.events.event[0];
+    console.log('Event: listings:' + resultEvent.title);
+  });
 
   inquirer
     .prompt({
@@ -152,23 +137,24 @@ const questions = [
           venue_name,
           venue_address
         } = resultEvent;
+      }
 
     connection.query(
       'INSERT INTO events (title, start_time, venue_name, venue_address) VALUES ($1, $2, $3, $4)', [title, start_time, venue_name, venue_address], (error, results) => {
         if (error) {
           throw error;
         }
-      console.log(`We look forware to seeing you at ${title}`);
-      }
-    )
-    // connection.end()
+      console.log(`We look forward to seeing you at ${title}`);
+    })
 
-    }
-  })
+    connections.end()
+      // }
+    })
 
-})
-}
-)
+  }
+  )
+// }
+continueCallback()
 }; 
 
     
@@ -176,34 +162,61 @@ const questions = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  app.matchUserWithEvent = (continueCallback) => {
   //YOUR WORK HERE
 
-   console.log('Please write code for this function');
-  //End of your work
-  continueCallback();
-}
+  const questions = [
+    {
+      message: "What's your first name?",
+      type: "input",
+      name: "firstName"
+    },
+    {
+      message: "What event you are looking for?",
+      type: "input",
+      name: "event"
+    }
+  ];
+
+  inquirer.prompt(questions).then (answer => {
+    console.log(`hi ${answer}`);
+    // console.log(answer['firstName']);
+    let findName = answer['firstName'];
+    console.log(findName);
+
+  connection.query('SELECT * FROM users WHERE VALUES ($1)', [findName], (error, results) => {
+    if (error) {
+      throw error;
+    }
+    console.log(error, results);
+  })
+  connection.end();
+
+
+  connection.query('SELECT * FROM events WHERE VALUES ($1)', [event], (error, results) => {
+    if (error) {
+      throw error;
+    }
+    console.log(error, results);
+  })
+  connection.end();
+  
+
+  connection.query(
+    'INSERT INTO attend VALUES ($1, $2)', [users.findName, events.event], (error, results) => {
+      if (error) {
+        throw error;
+      }
+    console.log(`We look forward to seeing you at ${title}`);
+    }
+  )
+  connections.end()
+
+})
+console.log('Please write code for this function');
+continueCallback();
+};
+
 
  app.seeEventsOfOneUser = (continueCallback) => {
   //YOUR WORK HERE
@@ -222,3 +235,5 @@ const questions = [
 }
 
  module.exports = app;
+
+
